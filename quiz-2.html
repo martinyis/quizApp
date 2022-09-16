@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,600,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"></div>
+    </header>
+    <main class="page">
+      <section data-quiz="2" class="quiz hidden">
+        <div class="quiz__container">
+          <div class="quiz__box question-1">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of Indonesia is:</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Jakarta</div>
+              <div data-variant="2" class="quiz__variant">Phnom Penh</div>
+              <div data-variant="3" class="quiz__variant">London</div>
+              <div data-variant="4" class="quiz__variant">New Delhi</div>
+            </div>
+          </div>
+          <div class="quiz__box question-2">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of Bosnia is:</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Pristina</div>
+              <div data-variant="2" class="quiz__variant">Sarajevo</div>
+              <div data-variant="3" class="quiz__variant">Delhi</div>
+              <div data-variant="4" class="quiz__variant">Prague</div>
+            </div>
+          </div>
+          <div class="quiz__box question-3">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of Germany is:</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Frankfurt</div>
+              <div data-variant="2" class="quiz__variant">Bonn</div>
+              <div data-variant="3" class="quiz__variant">Berlin</div>
+              <div data-variant="4" class="quiz__variant">Prague</div>
+            </div>
+          </div>
+          <div class="quiz__box question-4">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of Kenya is:</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Kinshasa</div>
+              <div data-variant="2" class="quiz__variant">Nairobi</div>
+              <div data-variant="3" class="quiz__variant">Pretoria</div>
+              <div data-variant="4" class="quiz__variant">Bonn</div>
+            </div>
+          </div>
+          <div class="quiz__box question-5">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of Colombia is</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Lima</div>
+              <div data-variant="2" class="quiz__variant">Buenos Aires</div>
+              <div data-variant="3" class="quiz__variant">Nairobi</div>
+              <div data-variant="4" class="quiz__variant">Bogot</div>
+            </div>
+          </div>
+          <div class="quiz__box question-6">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of Italy is:</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Naples</div>
+              <div data-variant="2" class="quiz__variant">Milan</div>
+              <div data-variant="3" class="quiz__variant">Lima</div>
+              <div data-variant="4" class="quiz__variant">Rome</div>
+            </div>
+          </div>
+          <div class="quiz__box question-7">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of New Zealand is:</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Auckland</div>
+              <div data-variant="2" class="quiz__variant">Wellington</div>
+              <div data-variant="3" class="quiz__variant">Christchurch</div>
+              <div data-variant="4" class="quiz__variant">Bogot</div>
+            </div>
+          </div>
+          <div class="quiz__box question-8">
+            <div class="quiz__wrap">
+              <div class="quiz__question">The capital of Vietnam is:</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Christchurch</div>
+              <div data-variant="2" class="quiz__variant">Vietnam</div>
+              <div data-variant="3" class="quiz__variant">Hanoi</div>
+              <div data-variant="4" class="quiz__variant">Da Nang</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quiz__result hidden">
+        <div class="quiz__container">
+          <div class="quiz__wrap">
+            <div class="quiz__title">Your score is</div>
+            <div class="quiz__score"></div>
+            <div class="quiz__result-buttons">
+              <div class="quiz__restart">
+                <button class="quiz__restart-btn">Restart</button>
+              </div>
+              <div class="quiz__mainpage">
+                <button class="quiz__mainpage-btn">New quiz</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+    <!-- <script src="js/script.js"></script> -->
+    <script type="module" src="js/questions.js"></script>
+    <script type="module" src="js/quiz-set.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,600,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"></div>
+    </header>
+    <main class="page">
+      <section data-quiz="5" class="quiz hidden">
+        <div class="quiz__container">
+          <div class="quiz__box question-1">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                When did the English national team win the FIFA World Cup?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">1990</div>
+              <div data-variant="2" class="quiz__variant">1966</div>
+              <div data-variant="3" class="quiz__variant">1970</div>
+              <div data-variant="4" class="quiz__variant">1930</div>
+            </div>
+          </div>
+          <div class="quiz__box question-2">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                In which country did the modern version of football originate?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">England</div>
+              <div data-variant="2" class="quiz__variant">Germany</div>
+              <div data-variant="3" class="quiz__variant">Italy</div>
+              <div data-variant="4" class="quiz__variant">Brazil</div>
+            </div>
+          </div>
+          <div class="quiz__box question-3">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Who was the first man to both captain and manage a World
+                Cup-winning football team?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">
+                Franz Beckenbauer
+              </div>
+              <div data-variant="2" class="quiz__variant">Joseph Mercer</div>
+              <div data-variant="3" class="quiz__variant">Bobby Charlton</div>
+              <div data-variant="4" class="quiz__variant">Pelé</div>
+            </div>
+          </div>
+          <div class="quiz__box question-4">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                What is the world governing body of amateur football
+                competitions?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">
+                World Football Association (WFA)
+              </div>
+              <div data-variant="2" class="quiz__variant">
+                Fédération Internationale des Echecs (FIDE)
+              </div>
+              <div data-variant="3" class="quiz__variant">
+                International Football Association Board (IFAB
+              </div>
+              <div data-variant="4" class="quiz__variant">
+                Fédération Internationale de Football Association (FIFA)
+              </div>
+            </div>
+          </div>
+          <div class="quiz__box question-5">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                In 1970, which football team won its third World Cup
+                championship and thus claimed permanent ownership of the Jules
+                Rimet Trophy?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Italy</div>
+              <div data-variant="2" class="quiz__variant">Brazil</div>
+              <div data-variant="3" class="quiz__variant">England</div>
+              <div data-variant="4" class="quiz__variant">Germany</div>
+            </div>
+          </div>
+          <div class="quiz__box question-6">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which football player, known as “Perola Negra,” led his squad to
+                three World Cup championships?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Zico</div>
+              <div data-variant="2" class="quiz__variant">
+                Franz Beckenbauer
+              </div>
+              <div data-variant="3" class="quiz__variant">Pelé</div>
+              <div data-variant="4" class="quiz__variant">Diego Maradona</div>
+            </div>
+          </div>
+          <div class="quiz__box question-7">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Known as “the Wizard of Dribble,” who was the first British
+                footballer to be knighted?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Bobby Charlton</div>
+              <div data-variant="2" class="quiz__variant">Bobby Robson</div>
+              <div data-variant="3" class="quiz__variant">Stanley Matthews</div>
+              <div data-variant="4" class="quiz__variant">Ronaldo</div>
+            </div>
+          </div>
+          <div class="quiz__box question-8">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Who is the best team in football 2022?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Liverpool</div>
+              <div data-variant="2" class="quiz__variant">Manchester City</div>
+              <div data-variant="3" class="quiz__variant">PSG</div>
+              <div data-variant="4" class="quiz__variant">Bayern Munich</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quiz__result hidden">
+        <div class="quiz__container">
+          <div class="quiz__wrap">
+            <div class="quiz__title">Your score is</div>
+            <div class="quiz__score"></div>
+            <div class="quiz__result-buttons">
+              <div class="quiz__restart">
+                <button class="quiz__restart-btn">Restart</button>
+              </div>
+              <div class="quiz__mainpage">
+                <button class="quiz__mainpage-btn">New quiz</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+    <!-- <script src="js/script.js"></script> -->
+    <script type="module" src="js/questions.js"></script>
+    <script type="module" src="js/quiz-set.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,600,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"></div>
+    </header>
+    <main class="page">
+      <section data-quiz="1" class="quiz hidden">
+        <div class="quiz__container">
+          <div class="quiz__box question-1">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which company developed JavaScript?
+              </div>
+            </div>
+            <div id="quiz__variants" class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Rasmus Lerdorf</div>
+              <div data-variant="2" class="quiz__variant">WHATWG</div>
+              <div data-variant="3" class="quiz__variant">Netscape</div>
+              <div data-variant="4" class="quiz__variant">Guido van Rossum</div>
+            </div>
+          </div>
+          <div class="quiz__box question-2">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                For strict equality comparisons, we should use
+              </div>
+            </div>
+            <div id="quiz__variants" class="quiz__variants quiz__variants2">
+              <div data-variant="1" class="quiz__variant">=</div>
+              <div data-variant="2" class="quiz__variant">===</div>
+              <div data-variant="3" class="quiz__variant">==</div>
+              <div data-variant="4" class="quiz__variant">:</div>
+            </div>
+          </div>
+          <div class="quiz__box question-3">
+            <div class="quiz__wrap">
+              <div class="quiz__question">console.log(typeof NaN);</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">NaN</div>
+              <div data-variant="2" class="quiz__variant">Number</div>
+              <div data-variant="3" class="quiz__variant">Undefiend</div>
+              <div data-variant="4" class="quiz__variant">null</div>
+            </div>
+          </div>
+          <div class="quiz__box question-4">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                const numbers = [33, 2, 8]; numbers.sort();
+                console.log(numbers[1])
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">33</div>
+              <div data-variant="2" class="quiz__variant">2</div>
+              <div data-variant="3" class="quiz__variant">8</div>
+              <div data-variant="4" class="quiz__variant">1</div>
+            </div>
+          </div>
+          <div class="quiz__box question-5">
+            <div class="quiz__wrap">
+              <div class="quiz__question">console.log(018 - 015);</div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Nan</div>
+              <div data-variant="2" class="quiz__variant">5</div>
+              <div data-variant="3" class="quiz__variant">13</div>
+              <div data-variant="4" class="quiz__variant">3</div>
+            </div>
+          </div>
+          <div class="quiz__box question-6">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which of the following is a server-side Java Script object?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Function</div>
+              <div data-variant="2" class="quiz__variant">File</div>
+              <div data-variant="3" class="quiz__variant">FileUpload</div>
+              <div data-variant="4" class="quiz__variant">Date</div>
+            </div>
+          </div>
+          <div class="quiz__box question-7">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                How does Java Script store dates in objects of Date type?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">
+                The number of days since January 1st, 1900
+              </div>
+              <div data-variant="2" class="quiz__variant">
+                The number of seconds since January 1st, 1970
+              </div>
+              <div data-variant="3" class="quiz__variant">
+                The number of milliseconds since January 1st, 1970
+              </div>
+              <div data-variant="4" class="quiz__variant">
+                The number of picoseconds since January 1st, 1970
+              </div>
+            </div>
+          </div>
+          <div class="quiz__box question-8">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which attribute needs to be changed to make elements invisible?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">visibilty</div>
+              <div data-variant="2" class="quiz__variant">visible</div>
+              <div data-variant="3" class="quiz__variant">invisibility</div>
+              <div data-variant="4" class="quiz__variant">invisible</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quiz__result hidden">
+        <div class="quiz__container">
+          <div class="quiz__wrap">
+            <div class="quiz__title">Your score is</div>
+            <div class="quiz__score"></div>
+            <div class="quiz__result-buttons">
+              <div class="quiz__restart">
+                <button class="quiz__restart-btn">Restart</button>
+              </div>
+              <div class="quiz__mainpage">
+                <button class="quiz__mainpage-btn">New quiz</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+    <!-- <script src="js/script.js"></script> -->
+    <script type="module" src="js/questions.js"></script>
+    <script type="module" src="js/quiz-set.js"></script>
+  </body>
+</html>

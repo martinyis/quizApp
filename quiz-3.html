@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,600,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"></div>
+    </header>
+    <main class="page">
+      <section data-quiz="3" class="quiz hidden">
+        <div class="quiz__container">
+          <div class="quiz__box question-1">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Patients with schizophrenia will most likely display ____ in
+                their brains.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">
+                Discoloration of connective tissues
+              </div>
+              <div data-variant="2" class="quiz__variant">
+                Enlarged ventricles
+              </div>
+              <div data-variant="3" class="quiz__variant">Blood clots</div>
+              <div data-variant="4" class="quiz__variant">
+                No detectable traces of the disease
+              </div>
+            </div>
+          </div>
+          <div class="quiz__box question-2">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Who is known as the father of classical conditioning?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Ivan Pavlov</div>
+              <div data-variant="2" class="quiz__variant">B.F. Skinner</div>
+              <div data-variant="3" class="quiz__variant">Jean-Paul Sartre</div>
+              <div data-variant="4" class="quiz__variant">Sigmund Freud</div>
+            </div>
+          </div>
+          <div class="quiz__box question-3">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which type of behavior modification relies on consequences?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">
+                Classical conditioning
+              </div>
+              <div data-variant="2" class="quiz__variant">Aversion therapy</div>
+              <div data-variant="3" class="quiz__variant">
+                Operant conditioning
+              </div>
+              <div data-variant="4" class="quiz__variant">Flooding</div>
+            </div>
+          </div>
+          <div class="quiz__box question-4">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Who was the first woman to earn a Ph.D. in psychology?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">
+                Margaret Floy Washburn
+              </div>
+              <div data-variant="2" class="quiz__variant">
+                Mary Whiton Calkins
+              </div>
+              <div data-variant="3" class="quiz__variant">
+                Leta Stetter Hollingworth
+              </div>
+              <div data-variant="4" class="quiz__variant">
+                Helen Thompson Woolley
+              </div>
+            </div>
+          </div>
+          <div class="quiz__box question-5">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which animals were primarily used in B.F. Skinners “Skinner
+                Boxes” of operant conditioning?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Dogs</div>
+              <div data-variant="2" class="quiz__variant">Rats</div>
+              <div data-variant="3" class="quiz__variant">Cats</div>
+              <div data-variant="4" class="quiz__variant">Rabbits</div>
+            </div>
+          </div>
+          <div class="quiz__box question-6">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                According to Freud, which inner force contains the libido?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Superid</div>
+              <div data-variant="2" class="quiz__variant">Id</div>
+              <div data-variant="3" class="quiz__variant">Ego</div>
+              <div data-variant="4" class="quiz__variant">Superego</div>
+            </div>
+          </div>
+          <div class="quiz__box question-7">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which of these is not one of Freuds stages of psychosexual
+                development?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Anal</div>
+              <div data-variant="2" class="quiz__variant">Oral</div>
+              <div data-variant="3" class="quiz__variant">Curious</div>
+              <div data-variant="4" class="quiz__variant">Phallic</div>
+            </div>
+          </div>
+          <div class="quiz__box question-8">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                Which of these might be prescribed to a patient who has been
+                diagnosed with major depressive disorder?
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Acetylcholine</div>
+              <div data-variant="2" class="quiz__variant">DSM</div>
+              <div data-variant="3" class="quiz__variant">Norepinephrine</div>
+              <div data-variant="4" class="quiz__variant">SSRI</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quiz__result hidden">
+        <div class="quiz__container">
+          <div class="quiz__wrap">
+            <div class="quiz__title">Your score is</div>
+            <div class="quiz__score"></div>
+            <div class="quiz__result-buttons">
+              <div class="quiz__restart">
+                <button class="quiz__restart-btn">Restart</button>
+              </div>
+              <div class="quiz__mainpage">
+                <button class="quiz__mainpage-btn">New quiz</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+    <!-- <script src="js/script.js"></script> -->
+    <script type="module" src="js/questions.js"></script>
+    <script type="module" src="js/quiz-set.js"></script>
+  </body>
+</html>

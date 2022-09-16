@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:500,600,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container"></div>
+    </header>
+    <main class="page">
+      <section data-quiz="4" class="quiz hidden">
+        <div class="quiz__container">
+          <div class="quiz__box question-1">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                This company acquired the mobile phone maker Motorola Mobility
+                in 2012.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Samsung</div>
+              <div data-variant="2" class="quiz__variant">Microsoft</div>
+              <div data-variant="3" class="quiz__variant">Apple</div>
+              <div data-variant="4" class="quiz__variant">Google</div>
+            </div>
+          </div>
+          <div class="quiz__box question-2">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                This company was famously started out of a Silicon Valley garage
+                by two high-school friends.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Google</div>
+              <div data-variant="2" class="quiz__variant">Viewsonic</div>
+              <div data-variant="3" class="quiz__variant">Apple</div>
+              <div data-variant="4" class="quiz__variant">Microsoft</div>
+            </div>
+          </div>
+          <div class="quiz__box question-3">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                This tech company is the maker of the popular Galaxy brand of
+                smartphones.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Sony</div>
+              <div data-variant="2" class="quiz__variant">Huawei</div>
+              <div data-variant="3" class="quiz__variant">Samsung</div>
+              <div data-variant="4" class="quiz__variant">Google</div>
+            </div>
+          </div>
+          <div class="quiz__box question-4">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                This companys first customer was Walt Disney Productions in
+                1939, which bought audio technology to make the film Fantasia.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Hewlett-Packard</div>
+              <div data-variant="2" class="quiz__variant">Beats Audio</div>
+              <div data-variant="3" class="quiz__variant">Sony</div>
+              <div data-variant="4" class="quiz__variant">LG</div>
+            </div>
+          </div>
+          <div class="quiz__box question-5">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                The first product this company produced was an electric rice
+                cooker.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Sony</div>
+              <div data-variant="2" class="quiz__variant">KitchenAid</div>
+              <div data-variant="3" class="quiz__variant">Whirlpool</div>
+              <div data-variant="4" class="quiz__variant">Samsung</div>
+            </div>
+          </div>
+          <div class="quiz__box question-6">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                The original name of this tech company was PCs Limited.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Dell</div>
+              <div data-variant="2" class="quiz__variant">Dell</div>
+              <div data-variant="3" class="quiz__variant">Intel</div>
+              <div data-variant="4" class="quiz__variant">Hewlett-Packard</div>
+            </div>
+          </div>
+          <div class="quiz__box question-7">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                This company got its start by selling books online.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Toshiba</div>
+              <div data-variant="2" class="quiz__variant">Amazon</div>
+              <div data-variant="3" class="quiz__variant">Apple</div>
+              <div data-variant="4" class="quiz__variant">AOL</div>
+            </div>
+          </div>
+          <div class="quiz__box question-8">
+            <div class="quiz__wrap">
+              <div class="quiz__question">
+                This company is the number one manufacturer of semiconductor
+                computer circuits—the guts of a computer.
+              </div>
+            </div>
+            <div class="quiz__variants">
+              <div data-variant="1" class="quiz__variant">Adobe</div>
+              <div data-variant="2" class="quiz__variant">Apple</div>
+              <div data-variant="3" class="quiz__variant">Amazon</div>
+              <div data-variant="4" class="quiz__variant">AOL</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quiz__result hidden">
+        <div class="quiz__container">
+          <div class="quiz__wrap">
+            <div class="quiz__title">Your score is</div>
+            <div class="quiz__score"></div>
+            <div class="quiz__result-buttons">
+              <div class="quiz__restart">
+                <button class="quiz__restart-btn">Restart</button>
+              </div>
+              <div class="quiz__mainpage">
+                <button class="quiz__mainpage-btn">New quiz</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container"></div>
+    </footer>
+    <!-- <script src="js/script.js"></script> -->
+    <script type="module" src="js/questions.js"></script>
+    <script type="module" src="js/quiz-set.js"></script>
+  </body>
+</html>
